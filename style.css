@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+#swipe {
+    -webkit-appearance: none;
+    width: 600px;
+    height: 30px;
+    background-color: rgb(201, 201, 201);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     
+}
+
+#swipe::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 90px;
+    height: 90px;
+    background-color: tomato;
+    transform: translateX(50%) rotate(45deg);
+    box-shadow: -450px 0 0 400px tomato;
+}
+
+#massage {
+    color: wheat;
+    font-family: sans-serif;
+
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    background-color: black;
+    background-image: url(./Sorry\ note.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.dispay--none {
+    display: none;
+}
+
+@media (max-width: 750px){
+    #swipe {
+        width: 70%;
+    }
+}
